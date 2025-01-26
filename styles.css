@@ -65,6 +65,7 @@ body {
   border: #fff 1px solid;
   border-radius: 10px;
   display: flex;
+  max-height: 100vh;
   flex-direction: column;
   gap: 10px;
 }
@@ -367,6 +368,7 @@ width: 640px;
   .timeline-item {
     padding: 0 20px;
   }
+
   .profile img{
   height: 250px;
   }
