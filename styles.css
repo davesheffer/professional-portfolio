@@ -125,7 +125,7 @@ margin-right: 10px;
 .hire-me {
   display: inline-block;
   background: var(--button-color);
-  color: #fff;
+  color: #3A3D04;
   padding: 10px 20px;
   border-radius: 5px;
 
@@ -332,7 +332,7 @@ width: 640px;
 }
 .submit-btn {
   display: inline-block;
-  background: var(--button-color);
+  background: var(--earth-brown);
   color: #fff;
   font-family: "Nunito", sans-serif;
   padding: 10px 20px;
