@@ -358,6 +358,10 @@ width: 640px;
   .right-side {
     padding: 20px;
   }
+  section {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
   .right-side h2 {
     font-size: 3.5rem;
   }
@@ -377,6 +381,9 @@ width: 640px;
   }
   .stats-grid {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .timeline-item {
+    padding:16px 20px;
   }
   .contact-form {
     width: 100%;
