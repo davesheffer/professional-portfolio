@@ -1,9 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+  /* Primary Colors */
+  --forest-green: #ABC969;
+  --earth-brown: #3A3D04;
+  --button-color:  #69680E;
+  --button-hover: #ABC969;
+  /* Accent Colors */
+  --olive-green: #6b8e23;
+  --sandy-brown: #f4a460;
+
+  /* Neutral Colors */
+  --ivory: #fffff0;
+  --charcoal-grey: #2f4f4f;
+
+  /* Complementary Colors */
+  --soft-beige: #d2b48c;
+  --mint-green: #98fb98;
+}
+
 * {
   box-sizing: border-box;
 }
 /* General Styles */
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Nunito', sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
@@ -90,7 +111,7 @@ body {
   text-decoration: none;
 }
 .left-side i {
-    color:  #3498db;
+    color:  var(  --forest-green);
     font-size: 1.5rem;
 margin-right: 10px;
 
@@ -102,7 +123,7 @@ margin-right: 10px;
 
 .hire-me {
   display: inline-block;
-  background: #3498db;
+  background: var(--button-color);
   color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
@@ -112,7 +133,8 @@ margin-right: 10px;
 }
 
 .hire-me:hover {
-  background: #2980b9;
+  background: var(--button-hover);
+  color: var(--earth-brown)
 }
 .social-icons {
   display: flex;
@@ -144,7 +166,7 @@ margin-right: 10px;
     align-items: center;
     color: #fff;
     padding: 5px 20px;
-    border: 1px solid #3498db;
+    border: 1px solid  var(  --forest-green);;
     border-radius: 20px;
     font-size: 0.8rem;
     margin-right: 10px;
@@ -155,7 +177,7 @@ margin-right: 10px;
   margin: 0;
   margin-bottom: 32px;
   font-weight: 100;
-  color: #3498db;
+  color:  var(  --forest-green);;
 }
 
 
@@ -184,12 +206,14 @@ margin-right: 10px;
 .timeline-item h3 {
   margin: 0 0 10px;
   font-size: 1.8rem;
-  color: #3498db;
+  font-weight: 100;
+  color:  var(  --sandy-brown);;
 }
 
 .timeline-item p {
   font-size: 1.2rem;
   margin: 5px 0;
+  font-weight: 100;
   color: #fff;
 }
 
@@ -210,7 +234,7 @@ margin-right: 10px;
 }
 
 .skill-card {
-  border: 1px solid #f4f4f4;
+  border: 1px solid  var(  --forest-green);;
   padding: 20px;
   border-radius: 10px;
   height: 200px;
@@ -222,8 +246,9 @@ margin-right: 10px;
 
 .skill-card h3 {
   margin: 0 0 10px;
-  font-size: 1.5rem;
-  color: #3498db;
+  font-size: 1.8rem;
+  font-weight: 100;
+  color:  var(  --sandy-brown);;
 }
 
 .skill-card p {
@@ -240,7 +265,7 @@ margin-right: 10px;
 }
 
 .stat {
-  background: #f4f4f4;
+border: 1px solid  var(  --forest-green);;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
@@ -253,15 +278,16 @@ margin-right: 10px;
 }
 
 .stat h3 {
-  margin: 0;
-  font-size: 2rem;
-  color: #3498db;
+  margin: 0 0 10px;
+  font-size: 5rem;
+  font-weight: 100;
+  color:  var(  --sandy-brown);;
 }
 
 .stat p {
   margin: 10px 0 0;
   font-size: 1.1rem;
-  color: #666;
+  color: #fff;
 }
 
 /* Contact Form */
@@ -299,19 +325,21 @@ width: 640px;
 }
 .submit-btn {
   display: inline-block;
-  background: #3498db;
+  background: var(--button-color);
   color: #fff;
+  font-family: "Nunito", sans-serif;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 400;
   cursor: pointer;
   transition: background 0.3s ease;
 }
 
 .submit-btn:hover {
-  background: #2980b9;
+  background: var(--button-hover);
+  color: var(--earth-brown)
 }
 
 /* Media Queries */
