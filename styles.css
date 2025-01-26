@@ -62,11 +62,34 @@ body {
 }
 .profile {
   padding: 30px;
-  border: #fff 1px solid;
+  border: 2px solid transparent;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.profile::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%; /* Larger than the container */
+  height: 200%; /* Larger than the container */
+  background: conic-gradient(
+    from 0deg,
+    rgba(255, 255, 255, 0) 25%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 0) 75%
+  );
+  background-size: 200% 200%;
+  animation: electric-current 4s linear infinite;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+  border-radius: 10px; /* Matches the container's border-radius */
 }
 .profile-image {
   width: 100%;
@@ -393,5 +416,13 @@ width: 640px;
   }
   .contact-form {
     width: 100%;
+  }
+}
+@keyframes electric-current {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
   }
 }
