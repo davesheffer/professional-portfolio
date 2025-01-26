@@ -365,9 +365,10 @@ width: 640px;
     padding: 20px;
   }
   .timeline-item {
-
     padding: 0 20px;
-
+  }
+  .profile img{
+  height: 250px;
   }
 
   section {
