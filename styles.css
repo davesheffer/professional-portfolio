@@ -365,7 +365,7 @@ width: 640px;
 @media (max-width: 768px) {
   .layout {
     flex-direction: column;
-    padding: 0 20px;
+    padding: 0 ;
   }
   .right-side {
     padding: 20px;
