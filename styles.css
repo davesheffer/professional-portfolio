@@ -316,11 +316,12 @@ width: 640px;
 .form-group input,
 .form-group textarea {
   width: 100%;
-  padding: 20px 10px;
+  padding: 20px 20px;
   font-size: 1rem;
   border: 1px solid  var(  --forest-green);;
   border-radius: 5px;
   background: transparent;
+  color: var(--ivory);
   transition: border-color 0.3s ease;
 }
 
